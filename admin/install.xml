@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="component" versio="3.0" method="upgrade">
+    <name>COM_TESTING</name>
+    <creationDate>2019-05-01</creationDate>
+    <author>Rekuha</author>
+    <autorEmail>aarekuha@gmail.com</autorEmail>
+    <copyright>Copyright info</copyright>
+    <version>1.0.0</version>
+    <description>Modukle description</description>
+
+    <install>
+        <sql>
+            <file driver="mysqli" charset="utf8">sql/install.mysql.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysqli" charset="utf8">sql/uninstall.mysql.sql</file>
+        </sql>
+    </uninstall>
+
+    <languages folder="site">
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_testing.ini</language>
+    </languages>
+
+    <languages folder="admin">
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_testing.ini</language>
+        <language tag="ru-RU">language/ru-RU/ru-RU.com_testing.sys.ini</language>
+    </languages>
+
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>language</folder>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>views</folder>
+
+        <filename>controller.php</filename>
+        <filename>testing.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+    <administration>
+        <menu link="option=com_testing">COM_TESTING</menu>
+        <submenu>
+            <menu view="usertickets">COM_TESTING_MENU_USER_TICKETS</menu>
+            <menu view="users">COM_TESTING_MENU_USERS</menu>
+            <menu view="questions">COM_TESTING_MENU_QUESTIONS</menu>
+            <menu view="documents">COM_TESTING_MENU_DOCUMENTS</menu>
+            <menu view="tickets">COM_TESTING_MENU_TICKETS</menu>
+        </submenu>
+
+        <files folder="admin">
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+
+            <filename>controller.php</filename>
+            <filename>testing.php</filename>
+            <filename>index.html</filename>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+        </files>
+    </administration>
+</extension>

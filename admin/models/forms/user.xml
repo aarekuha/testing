@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <fieldset name="basic">
+        <field name="id" type="hidden"></field>
+
+        <field name="fio" type="text" value="" label="COM_TESTING_FIELD_USER_FIO" description="COM_TESTING_FIELD_USER_FIO_DESC" required="true"></field>
+        <field name="email" type="text" value="" label="COM_TESTING_FIELD_USER_EMAIL" description="COM_TESTING_FIELD_USER_EMAIL_DESC" required="true"></field>
+        <field name="password" type="text" value="" label="COM_TESTING_FIELD_USER_PASSWORD" description="COM_TESTING_FIELD_USER_PASSWORD_DESC" required="true"></field>
+
+    </fieldset>
+</form>

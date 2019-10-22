@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+<fields name="filter">
+    <field name="search" type="text" label="COM_TESTING_NAME_IN_TITLE" hint="COM_TESTING_SEARCH_IN_TITLE" class="js-stools-search-string"/>
+    <field name="question" type="text" label="COM_TESTING_QUESTION_IN_TITLE" hint="COM_TESTING_QUESTION_IN_TITLE" class="js-stools-search-string"/>
+    <field name="type" type="list" label="COM_TESTING_TYPE_IN_TITLE" class="js-stools-search-string" onchange="this.form.submit();">
+        <option value="">COM_TESTING_FIELD_TYPE_NONE</option>
+        <option value="0">COM_TESTING_FIELD_TYPE_1</option>
+        <option value="1">COM_TESTING_FIELD_TYPE_2</option>
+        <option value="2">COM_TESTING_FIELD_TYPE_3</option>
+    </field>
+</fields>
+<fields name="list">
+    <field
+            name="limit"
+            type="limitbox"
+            label="COM_CONTENT_LIST_LIMIT"
+            description="COM_CONTENT_LIST_LIMIT_DESC"
+            class="input-mini"
+            default="25"
+            onchange="this.form.submit();"
+    />
+</fields>
+</form>
